@@ -82,6 +82,48 @@ under the License.
         <flink.parent.artifactId/>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- Converge dependencies coming from Flink -->
+            <dependency>
+                <!-- For dependency convergence -->
+                <groupId>com.esotericsoftware.kryo</groupId>
+                <artifactId>kryo</artifactId>
+                <version>2.24.0</version>
+            </dependency>
+            <dependency>
+                <!-- For dependency convergence -->
+                <groupId>org.objenesis</groupId>
+                <artifactId>objenesis</artifactId>
+                <version>2.1</version>
+            </dependency>
+            <dependency>
+                <!-- For dependency convergence -->
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+            <dependency>
+                <!-- For dependency convergence -->
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-commons</artifactId>
+                <version>1.8.2</version>
+            </dependency>
+            <!-- For dependency convergence -->
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-engine</artifactId>
+                <version>1.8.1</version>
+            </dependency>
+            <dependency>
+                <!-- For dependency convergence -->
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>5.8.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
